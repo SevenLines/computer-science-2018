@@ -13,8 +13,9 @@ title: Задания по Microsoft Word
     </div>
     <div id="collapse{{forloop.index}}" class="collapse" data-parent="#accordion">
       <div class="card-body">
+        {% if t.file %}
         <span>Файл:</span> <a href="{{t.file}}">скачать</a>
-
+        {% endif %}
         <div>
 {{t.description | markdownify }}
         </div>
