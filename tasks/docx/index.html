@@ -1,0 +1,25 @@
+---
+layout: page
+title: Задания по Microsoft Word
+---
+
+<div id="accordion">
+  {% for t in site.data.tasks.docx %}
+  <div class="card">
+    <div class="card-header" id="headingThree">
+        <h3 data-toggle="collapse" data-target="#collapse{{forloop.index}}">
+№{{forloop.index}} {{t.title}}
+        </h3>
+    </div>
+    <div id="collapse{{forloop.index}}" class="collapse" data-parent="#accordion">
+      <div class="card-body">
+        <span>Файл:</span> <a href="{{t.file}}">скачать</a>
+
+        <div>
+{{t.description | markdownify }}
+        </div>
+      </div>
+    </div>
+  </div>
+{% endfor %} 
+</div>

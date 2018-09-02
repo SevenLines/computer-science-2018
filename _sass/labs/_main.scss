@@ -219,6 +219,47 @@ body {
   }
 }
 
+.page-content {
+  @for $i from 1 to 10 {
+    .card:nth-child(#{$i}) {
+      .card-header {
+        $color: adjust_hue(#d9ff00, $i * 25);
+        color: $color;
+
+        h3 {
+          background: lighten($color, 38);
+          color: darken($color, 20);
+          &:hover {
+            background: lighten($color, 45);
+            color: darken($color, 30);
+          }
+        }
+      }
+    }
+  }
+
+  .card {
+    border-radius: 0;
+    .card-header {
+      padding: 0;
+      border-bottom: 0;
+      h3 {
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        -ms-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s;
+        cursor: pointer;
+        display: block;
+        margin-bottom: 0;
+        text-align: left;
+        padding: 0.75rem 1.5rem;
+        width: 100%;
+      }
+    }
+  }
+}
+
 @media (max-width: 600px) {
 
   h1 {
