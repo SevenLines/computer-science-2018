@@ -220,10 +220,10 @@ body {
 }
 
 .page-content {
-  @for $i from 1 to 10 {
+  @for $i from 1 to 13 {
     .card:nth-child(#{$i}) {
       .card-header {
-        $color: adjust_hue(#d9ff00, $i * 25);
+        $color: adjust_hue(#d9ff00, $i * 15);
         color: $color;
 
         h3 {
