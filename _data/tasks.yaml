@@ -139,3 +139,7 @@ docx:
     description: |
       Проставить нумерацию в соответствии с указаниями в файле
     file: /assets/files/tasks/docx/10.docx
+  - title: Математические формулы
+    description: |
+      Сверстать формулы в соответствии с картинками в документе
+    file: /assets/files/tasks/docx/11.docx
