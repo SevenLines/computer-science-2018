@@ -60,7 +60,7 @@ docx:
     description: |
       Используя стили, поменять цвет выделенных слов и заголовков (а так же всех слов которые имеют такие же стили что слова ниже):
 
-      * Стиль "фрагментарны" – заменить шрифт на Times New Roman, 20pt
+      * Стиль "фрагментарны" – заменить шрифт на Times  New Roman, 20pt
       * Стиль что – заменить цвет шрифта на красный
       * Стиль непрерывности – добавить нижнее подчеркивание
       * Стиль демонстрируя – добавить рамку вокруг текста
@@ -104,7 +104,7 @@ docx:
       <div markdown="0" style="padding-bottom: 1em">
         <div class="row" >
           <div class="col-md-3"><img src="/assets/images/tasks/docx/07_001.jpg" /></div>
-          <div class="col-md-3"><img src="/assets/images/tasks/docx/07_002.jpg" /></div>
+          <div class="col-md-3"><img src="/assets/images /tasks/docx/07_002.jpg" /></div>
           <div class="col-md-3"><img src="/assets/images/tasks/docx/07_003.jpg" /></div>
           <div class="col-md-3"><img src="/assets/images/tasks/docx/07_004.jpg" /></div>
         </div>
@@ -135,3 +135,7 @@ docx:
 
       ![](/assets/images/tasks/docx/09_001.png)
     file: /assets/files/tasks/docx/09.docx
+  - title: Нумерация страниц
+    description: |
+      Проставить нумерацию в соответствии с указаниями в файле
+    file: /assets/files/tasks/docx/10.docx
